@@ -1,0 +1,31 @@
+<% layout("/layouts/boilerplate") %>
+<br>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h3>SignUp on WanderSight</h3>
+            <form method="POST" action="/signup" class="needs-validation" novalidate>
+                <div>
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="username" placeholder="enter username" class="form-control" required>
+                    <div class="invalid-feedback">Username should be valid</div>
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+                <br>
+                <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" name="email" placeholder="enter email" class="form-control" required>
+                    <div class="invalid-feedback">Email should be valid</div>
+                </div>
+                <br>
+                <div>
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" placeholder="enter password" class="form-control" required>
+                    <div class="invalid-feedback">Password should be valid</div>
+                </div>
+                <br>
+                <button class="btn btn-success">Signup</button>
+            </form>
+        </div>
+    </div>
+</body>
