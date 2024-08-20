@@ -59,6 +59,14 @@ const sessionOptions = {
     },
 };
 
+app.use(cors(
+    {
+        origin: ["https://wander-site-ruby.vercel.app/"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
+
 //HOME PAGE
 //app.get("/", (req,res) => {
 //    res.send("Hi, I am root");
