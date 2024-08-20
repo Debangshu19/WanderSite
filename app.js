@@ -61,7 +61,7 @@ const sessionOptions = {
 
 app.use(cors(
     {
-        origin: ["https://wander-site-ruby.vercel.app/"],
+        origin: ["https://wander-site-8pqsygroo-debangshu19s-projects.vercel.app/"],
         methods: ["POST", "GET"],
         credentials: true
     }
