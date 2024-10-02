@@ -1,1 +1,30 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+    {
+
+        "version": 2,
+
+        "builds": [
+
+            {
+
+                "src": "server.js", // Replace with your entry point file
+
+                "use": "@now/node"
+
+            }
+
+        ],
+
+        "routes": [
+
+            {
+
+                "src": "/(.*)", 
+
+                "dest": "server.js" 
+
+            }
+
+        ]
+
+    }
+
